@@ -1,0 +1,1584 @@
+{
+  "v": 11,
+  "name": "basic-user-and-task-management-api",
+  "folders": [
+    {
+      "v": 11,
+      "name": "user ",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "create user ",
+          "method": "POST",
+          "endpoint": "http://localhost:3000/users",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{ \"name\": \"Arun Patel\", \"email\": \"arunpatel@example.com\" }"
+          },
+          "requestVariables": [],
+          "responses": {
+            "error bad request": {
+              "name": "error bad request",
+              "originalRequest": {
+                "v": "6",
+                "name": "create user ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/users",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": ""
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:21:52 GMT"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1182"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"49e-OUPUzu+5FupSf7+NUg5KMP19gW8\""
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Name is required, Email is required\",\"stack\":\"Error: Name is required, Email is required\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/user.controller.js:13:15\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/utils/catchAsync.js:2:21\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:295:15\\n    at processParams (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:582:12)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:291:5)\"}"
+            },
+            "error email is required": {
+              "name": "error email is required",
+              "originalRequest": {
+                "v": "6",
+                "name": "create user ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/users",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"name\": \"Arun Patel\" }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1146"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:19:52 GMT"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"47a-w9hpbXzgHWz0opjMpWNE30T6ED0\""
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Email is required\",\"stack\":\"Error: Email is required\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/user.controller.js:13:15\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/utils/catchAsync.js:2:21\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:295:15\\n    at processParams (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:582:12)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:291:5)\"}"
+            },
+            "create user": {
+              "name": "create user",
+              "originalRequest": {
+                "v": "6",
+                "name": "create user ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/users",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"name\": \"John Doe\", \"email\": \"john@example.com\" }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "201 Created",
+              "code": 201,
+              "headers": [
+                {
+                  "key": "ETag",
+                  "value": "W/\"8c-MVtn/yoQSyMax61pOw2Oi0o8yjQ\""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "140"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 06:57:40 GMT"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"User created successfully\",\"data\":{\"name\":\"John Doe\",\"email\":\"john@example.com\",\"id\":\"697da7e345e860daafe14afc\"}}"
+            },
+            "conflict error": {
+              "name": "conflict error",
+              "originalRequest": {
+                "v": "6",
+                "name": "create user ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/users",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"name\": \"Arun Patel\", \"email\": \"arunpatel@example.com\" }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "403"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:18:04 GMT"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"193-Msvmrpn1Phhljlzj5FaEnmnX/lc\""
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Email already taken\",\"stack\":\"Error: Email already taken\\n    at Object.createUser (file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/services/user.service.js:7:15)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n    at async file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/user.controller.js:15:18\"}"
+            }
+          },
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "get user ",
+          "method": "GET",
+          "endpoint": "http://localhost:3000/users",
+          "params": [
+            {
+              "key": "limit",
+              "value": "1",
+              "active": false,
+              "description": ""
+            },
+            {
+              "key": "page",
+              "value": "1",
+              "active": false,
+              "description": ""
+            }
+          ],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {
+            "get user": {
+              "name": "get user",
+              "originalRequest": {
+                "v": "6",
+                "name": "get user ",
+                "method": "GET",
+                "endpoint": "http://localhost:3000/users",
+                "headers": [],
+                "params": [
+                  {
+                    "key": "limit",
+                    "value": "1",
+                    "active": false,
+                    "description": ""
+                  },
+                  {
+                    "key": "page",
+                    "value": "1",
+                    "active": false,
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "200 OK",
+              "code": 200,
+              "headers": [
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:24:02 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "301"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"12d-QX5QQgpky+W2fpcaoW2vyvpGJuo\""
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"Users retrieved successfully\",\"data\":{\"users\":[{\"name\":\"John Doe\",\"email\":\"john@example.com\",\"id\":\"697da7e345e860daafe14afc\"},{\"name\":\"Arun Patel\",\"email\":\"arunpatel@example.com\",\"id\":\"697da80145e860daafe14aff\"}],\"pagination\":{\"page\":1,\"limit\":10,\"total\":2,\"totalPages\":1}}}"
+            }
+          },
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "task ",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "name": "create a task ",
+          "method": "POST",
+          "endpoint": "http://localhost:3000/tasks",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {
+            "create a task": {
+              "name": "create a task",
+              "originalRequest": {
+                "v": "6",
+                "name": "create a task ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/tasks",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"title\": \"Buy groceries\", \"userId\": \"697da7e345e860daafe14afc\" }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "201 Created",
+              "code": 201,
+              "headers": [
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"ad-AIl7rvOpC6DTW0/FQ/wfbw9E2UM\""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "173"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:25:21 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"Task created successfully\",\"data\":{\"title\":\"Buy groceries\",\"completed\":false,\"userId\":\"697da7e345e860daafe14afc\",\"id\":\"697dae611b465eddafcb7951\"}}"
+            },
+            "error user id is requried": {
+              "name": "error user id is requried",
+              "originalRequest": {
+                "v": "6",
+                "name": "create a task ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/tasks",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"title\": \"Buy groceries\",  }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:25:46 GMT"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1150"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"47e-LHL+rrKvTQOkeDSnao5mcM+7E4E\""
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"User ID is required\",\"stack\":\"Error: User ID is required\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/task.controller.js:12:15\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/utils/catchAsync.js:2:21\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:295:15\\n    at processParams (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:582:12)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:291:5)\"}"
+            },
+            "errro both feild are required": {
+              "name": "errro both feild are required",
+              "originalRequest": {
+                "v": "6",
+                "name": "create a task ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/tasks",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": ""
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "Content-Length",
+                  "value": "1188"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"4a4-rTRziim7LY4YMxTIoe2lo2ArAv8\""
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:25:59 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Title is required, User ID is required\",\"stack\":\"Error: Title is required, User ID is required\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/task.controller.js:12:15\\n    at file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/utils/catchAsync.js:2:21\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:295:15\\n    at processParams (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:582:12)\\n    at next (F:\\\\aasss\\\\Basic User and Task Management API\\\\node_modules\\\\router\\\\index.js:291:5)\"}"
+            },
+            "error user does not exits": {
+              "name": "error user does not exits",
+              "originalRequest": {
+                "v": "6",
+                "name": "create a task ",
+                "method": "POST",
+                "endpoint": "http://localhost:3000/tasks",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"title\": \"Buy groceries\", \"userId\": \"697da7e345e860daafe14af1\" }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "400 Bad Request",
+              "code": 400,
+              "headers": [
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"193-rxW/YZY+IemOtnbcQ0RRM3cxdPY\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:25:32 GMT"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "403"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"User does not exist\",\"stack\":\"Error: User does not exist\\n    at Object.createTask (file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/services/task.service.js:9:15)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n    at async file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/task.controller.js:14:18\"}"
+            }
+          },
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "get all tasks ",
+          "method": "GET",
+          "endpoint": "http://localhost:3000/tasks",
+          "params": [
+            {
+              "key": "page ",
+              "value": "",
+              "active": false,
+              "description": ""
+            },
+            {
+              "key": "limit",
+              "value": "",
+              "active": false,
+              "description": ""
+            }
+          ],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {
+            "get all tasks": {
+              "name": "get all tasks",
+              "originalRequest": {
+                "v": "6",
+                "name": "get all tasks ",
+                "method": "GET",
+                "endpoint": "http://localhost:3000/tasks",
+                "headers": [],
+                "params": [
+                  {
+                    "key": "page ",
+                    "value": "",
+                    "active": false,
+                    "description": ""
+                  },
+                  {
+                    "key": "limit",
+                    "value": "",
+                    "active": false,
+                    "description": ""
+                  }
+                ],
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "200 OK",
+              "code": 200,
+              "headers": [
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "273"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"111-Ew5beMGaeELOMEceidG94y1OLVU\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:29:18 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"Tasks retrieved successfully\",\"data\":{\"tasks\":[{\"title\":\"Buy groceries\",\"completed\":false,\"userId\":{\"name\":\"John Doe\",\"id\":\"697da7e345e860daafe14afc\"},\"id\":\"697dae611b465eddafcb7951\"}],\"pagination\":{\"page\":1,\"limit\":10,\"total\":1,\"totalPages\":1}}}"
+            }
+          },
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "mark task as complete",
+          "method": "PATCH",
+          "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7953",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{ \"completed\": true }"
+          },
+          "requestVariables": [],
+          "responses": {
+            "task not found error": {
+              "name": "task not found error",
+              "originalRequest": {
+                "v": "6",
+                "name": "mark task as complete",
+                "method": "PATCH",
+                "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7953",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"completed\": true }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "404 Not Found",
+              "code": 404,
+              "headers": [
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:34:21 GMT"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "394"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"18a-e0Dep87uwStgj59rTWSi8V/up1M\""
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Task not found\",\"stack\":\"Error: Task not found\\n    at Object.updateTask (file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/services/task.service.js:42:15)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n    at async file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/task.controller.js:31:18\"}"
+            },
+            "mark task as complete": {
+              "name": "mark task as complete",
+              "originalRequest": {
+                "v": "6",
+                "name": "mark task as complete",
+                "method": "PATCH",
+                "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7951",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": "application/json",
+                  "body": "{ \"completed\": true }"
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "200 OK",
+              "code": 200,
+              "headers": [
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"ac-EZ1fPp0cgmWE630rI/h1bx/zEvI\""
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:31:14 GMT"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "172"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"Task updated successfully\",\"data\":{\"title\":\"Buy groceries\",\"completed\":true,\"userId\":\"697da7e345e860daafe14afc\",\"id\":\"697dae611b465eddafcb7951\"}}"
+            }
+          },
+          "description": null
+        },
+        {
+          "v": "17",
+          "name": "delete the task ",
+          "method": "DELETE",
+          "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7952",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {
+            "task not found error": {
+              "name": "task not found error",
+              "originalRequest": {
+                "v": "6",
+                "name": "delete the task ",
+                "method": "DELETE",
+                "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7952",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "404 Not Found",
+              "code": 404,
+              "headers": [
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"189-mRVMRagYKeVEJJ4mjVUkofCDDgM\""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:34:05 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "393"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                }
+              ],
+              "body": "{\"success\":false,\"message\":\"Task not found\",\"stack\":\"Error: Task not found\\n    at Object.deleteTask (file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/services/task.service.js:50:15)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\\n    at async file:///F:/aasss/Basic%20User%20and%20Task%20Management%20API/controllers/task.controller.js:36:5\"}"
+            },
+            "delete the task": {
+              "name": "delete the task",
+              "originalRequest": {
+                "v": "6",
+                "name": "delete the task ",
+                "method": "DELETE",
+                "endpoint": "http://localhost:3000/tasks/697dae611b465eddafcb7951",
+                "headers": [],
+                "params": [],
+                "body": {
+                  "contentType": null,
+                  "body": null
+                },
+                "auth": {
+                  "authType": "none",
+                  "authActive": true
+                },
+                "requestVariables": []
+              },
+              "status": "200 OK",
+              "code": 200,
+              "headers": [
+                {
+                  "key": "Origin-Agent-Cluster",
+                  "value": "?1"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "0"
+                },
+                {
+                  "key": "X-Download-Options",
+                  "value": "noopen"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"36-nEz6SFM1ji4GJKYMbq77oGLxI5Y\""
+                },
+                {
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN"
+                },
+                {
+                  "key": "Cross-Origin-Opener-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sat, 31 Jan 2026 07:31:37 GMT"
+                },
+                {
+                  "key": "Referrer-Policy",
+                  "value": "no-referrer"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                },
+                {
+                  "key": "X-DNS-Prefetch-Control",
+                  "value": "off"
+                },
+                {
+                  "key": "X-Permitted-Cross-Domain-Policies",
+                  "value": "none"
+                },
+                {
+                  "key": "Cross-Origin-Resource-Policy",
+                  "value": "same-origin"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "54"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "body": "{\"success\":true,\"message\":\"Task deleted successfully\"}"
+            }
+          },
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    }
+  ],
+  "requests": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "headers": [],
+  "variables": [],
+  "description": ""
+}

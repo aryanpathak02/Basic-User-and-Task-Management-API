@@ -1,0 +1,22 @@
+{
+  "name": "basic-user-and-task-management-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^9.1.5",
+    "zod": "^3.24.1"
+  }
+}
